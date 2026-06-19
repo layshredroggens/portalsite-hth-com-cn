@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>华体会 · 日常信息查询与延伸阅读</title>
+  <style>
+    /* —— 极简留白 · 窄正文 —— */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #faf9f8;
+      color: #2c2b2a;
+      font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans SC', sans-serif;
+      line-height: 1.7;
+      padding: 2.5rem 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .container {
+      max-width: 700px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    /* —— 标题层级 —— */
+    h1 {
+      font-size: 2.4rem;
+      font-weight: 350;
+      letter-spacing: -0.02em;
+      margin: 1.5rem 0 1rem 0;
+      color: #1e1d1c;
+      line-height: 1.2;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      margin: 2.4rem 0 1rem 0;
+      color: #3c3a38;
+      border-bottom: 1px solid #e3e1df;
+      padding-bottom: 0.3rem;
+    }
+    h3 {
+      font-size: 1.15rem;
+      font-weight: 500;
+      margin: 1.6rem 0 0.5rem 0;
+      color: #4a4845;
+    }
+
+    /* —— 段落 & 承接 —— */
+    p {
+      margin: 0.9rem 0;
+      text-align: left;
+      word-break: break-word;
+    }
+    .intro-line {
+      font-size: 1.1rem;
+      font-style: normal;
+      color: #5d5a56;
+      margin-bottom: 1.2rem;
+      border-left: 3px solid #cbc6c0;
+      padding-left: 1rem;
+    }
+    .signature {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: #7b7772;
+    }
+
+    /* —— 列表（特点/对比） —— */
+    .feature-list {
+      list-style: none;
+      padding: 0;
+      margin: 1.2rem 0 0.5rem 0;
+    }
+    .feature-list li {
+      position: relative;
+      padding: 0.6rem 0 0.6rem 2rem;
+      border-bottom: 1px dashed #eae7e3;
+      font-size: 0.98rem;
+    }
+    .feature-list li::before {
+      content: "▹";
+      position: absolute;
+      left: 0;
+      color: #9f9a94;
+      font-size: 1.2rem;
+    }
+    .feature-list li:last-child {
+      border-bottom: none;
+    }
+
+    /* —— 卡片/提示块 —— */
+    .info-block {
+      background: #f2efec;
+      border-radius: 14px;
+      padding: 1.5rem 1.8rem;
+      margin: 2rem 0;
+      font-size: 0.95rem;
+      color: #3f3d3a;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+    }
+    .info-block strong {
+      font-weight: 550;
+      color: #2a2826;
+    }
+
+    /* —— FAQ 摘要风格 —— */
+    .faq-item {
+      margin: 1rem 0;
+      padding: 0.2rem 0;
+    }
+    .faq-q {
+      font-weight: 500;
+      color: #3a3835;
+    }
+    .faq-a {
+      margin: 0.1rem 0 0.4rem 0.8rem;
+      color: #63605c;
+      font-size: 0.95rem;
+    }
+
+    /* —— 链接样式 —— */
+    a {
+      color: #2c5e5a;
+      text-decoration: underline;
+      text-underline-offset: 2px;
+      text-decoration-thickness: 1px;
+      transition: color 0.15s ease;
+    }
+    a:hover {
+      color: #1a3f3c;
+      text-decoration-thickness: 2px;
+    }
+
+    /* —— 按钮(极简) —— */
+    .btn-soft {
+      display: inline-block;
+      background: transparent;
+      border: 1px solid #d6d2cd;
+      border-radius: 30px;
+      padding: 0.4rem 1.2rem;
+      color: #3a3835;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .btn-soft:hover {
+      background: #edeae7;
+      border-color: #bcb7b0;
+    }
+
+    /* —— 响应式 —— */
+    @media (max-width: 540px) {
+      body { padding: 1.5rem 0.8rem; }
+      h1 { font-size: 1.9rem; }
+      .info-block { padding: 1.2rem 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- 开场短句 -->
+    <p class="intro-line">当信息在页面间快速流动，如何找到可信的对照线索，成了日常中的安静需求。</p>
+
+    <!-- 承接段落：从日常查询切入 -->
+    <p>在整理体育赛事动态、活动规则或延伸资料时，许多人习惯先打开一个集中入口，再按主题逐项核对。这种工作流并不复杂，却需要入口本身保持稳定、结构清晰。<a href="https://portalsite-hth.com.cn">华体会</a>所承载的，正是这样一种功能定位——它不喧哗，只是将分散的板块收纳在同一页面上，供人按需取用。</p>
+
+    <!-- 特点列表 -->
+    <h2>信息梳理的几种方式</h2>
+    <ul class="feature-list">
+      <li><strong>对照阅读</strong> —— 将不同活动、规则或公告并列呈现，方便横向比较细节差异。</li>
+      <li><strong>主题归拢</strong> —— 按内容领域划分区域，减少反复跳转时的记忆负担。</li>
+      <li><strong>更新提示</strong> —— 保持索引页与最新动态同步，避免参考过时信息。</li>
+      <li><strong>延伸路径</strong> —— 每个模块背后都有更完整的说明页，入口仅提供指向作用。</li>
+    </ul>
+
+    <!-- 温和的承接 / 背景补充 -->
+    <p>这种组织方式并非新鲜事，但在信息过载的环境中，一个克制的导航页面反而成为高效率的起点。使用者不必在多个标签页之间来回切换，只需记住一处索引，其余内容自然延伸。</p>
+
+    <!-- 场景提示块（卡片） -->
+    <div class="info-block">
+      <strong>实际场景举例</strong><br>
+      一位用户想查找某场活动的补充说明，他先打开 <a href="https://portalsite-hth.com.cn">华体会</a> 的总览页，从分类中找到对应板块，再顺着链接进入详细页面。整个过程不超过两次点击——这也是该入口设计的初衷：缩短查找路径，同时保留可扩展的深度。
+    </div>
+
+    <!-- FAQ 摘要（非完整版，仅取两个代表性问答） -->
+    <h2>常见问题的简短对照</h2>
+    <div class="faq-item">
+      <div class="faq-q">问：该页面适合移动设备浏览吗？</div>
+      <div class="faq-a">当前采用自适应窄列布局，手机与平板均可正常阅读，标题和列表会随屏幕宽度自动调整。</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">问：内容更新的频率如何？</div>
+      <div class="faq-a">索引页本身为静态结构，关联的详细页面会按实际活动、规则变动进行维护，建议定期回来对照。</div>
+    </div>
+
+    <!-- 温和结尾 -->
+    <p style="margin-top: 2.5rem;">信息检索从来不需要复杂的仪式。一个安静的索引页，加上日常的对照习惯，就足以支撑起大部分查询需求。如果你恰好也需要一个结构清晰、不打扰注意力的起点，不妨将<a href="https://portalsite-hth.com.cn">华体会</a>放在书签栏的某个角落——它会在你需要的时候，安静地展开。</p>
+
+    <div class="signature">
+      — 索引页并非终点，而是延伸阅读的锚点。
+    </div>
+
+    <!-- 极简装饰按键（非必要导航，仅风格点缀） -->
+    <div style="margin-top: 3rem; text-align: center;">
+      <span class="btn-soft">信息对照</span>
+      <span class="btn-soft" style="margin-left: 0.6rem;">延伸阅读</span>
+    </div>
+
+  </div>
+</body>
+</html>

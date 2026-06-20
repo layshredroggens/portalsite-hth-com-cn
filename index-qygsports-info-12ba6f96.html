@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>奇异果体育 · 简明指南</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f2f4f6;
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            color: #1e2a3a;
+            line-height: 1.6;
+            padding: 2rem 1.5rem;
+        }
+
+        .page-wrap {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* hero */
+        .hero {
+            background: #ffffff;
+            border-radius: 28px;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.04);
+            padding: 3rem 2.5rem;
+            margin-bottom: 2.5rem;
+            border: 1px solid #e6eaef;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.6rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            color: #0b1a2b;
+            margin-bottom: 0.75rem;
+        }
+
+        .hero .sub {
+            font-size: 1.2rem;
+            color: #4a5b6c;
+            max-width: 640px;
+            margin: 0 auto 1.8rem;
+        }
+
+        .hero .tagline {
+            font-size: 1rem;
+            background: #eef2f6;
+            display: inline-block;
+            padding: 0.3rem 1.2rem;
+            border-radius: 40px;
+            color: #2b3e53;
+            border: 1px solid #d9e0e8;
+        }
+
+        /* 卡片通用 */
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+            padding: 2rem 2.2rem;
+            margin-bottom: 2rem;
+            border: 1px solid #e6eaef;
+        }
+
+        .card h2 {
+            font-size: 1.6rem;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            margin-bottom: 1rem;
+            color: #132433;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #eaeef3;
+            display: inline-block;
+        }
+
+        .card p, .card li {
+            color: #2c3d50;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 1.2rem;
+        }
+
+        .grid-2 .item {
+            background: #f8fafc;
+            border-radius: 16px;
+            padding: 1.2rem 1.4rem;
+            border: 1px solid #e6eaef;
+            transition: box-shadow 0.2s;
+        }
+
+        .grid-2 .item:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+        }
+
+        .item strong {
+            display: block;
+            font-weight: 600;
+            color: #0b1f30;
+            margin-bottom: 0.2rem;
+        }
+
+        .item small {
+            font-size: 0.9rem;
+            color: #536573;
+        }
+
+        .faq-list {
+            list-style: none;
+            margin-top: 0.6rem;
+        }
+
+        .faq-list li {
+            padding: 0.8rem 0;
+            border-bottom: 1px solid #ebeef3;
+        }
+
+        .faq-list li:last-child {
+            border-bottom: none;
+        }
+
+        .faq-list .q {
+            font-weight: 600;
+            color: #142b3f;
+        }
+
+        .faq-list .a {
+            color: #3e5368;
+            margin-top: 0.15rem;
+            font-size: 0.95rem;
+        }
+
+        .footnote {
+            text-align: center;
+            margin-top: 2.5rem;
+            padding: 1.5rem 0 0.5rem;
+            color: #576c81;
+            font-size: 0.9rem;
+            border-top: 1px solid #dadfe6;
+        }
+
+        .footnote a {
+            color: #1e3b57;
+            text-decoration: none;
+            border-bottom: 1px dashed #b6c5d6;
+        }
+
+        .footnote a:hover {
+            border-bottom: 1px solid #1e3b57;
+        }
+
+        .btn-ghost {
+            display: inline-block;
+            background: transparent;
+            border: 1px solid #ccd6e0;
+            padding: 0.5rem 1.8rem;
+            border-radius: 40px;
+            font-size: 0.95rem;
+            color: #1e3349;
+            text-decoration: none;
+            transition: all 0.15s;
+            margin: 0.6rem 0.3rem;
+        }
+
+        .btn-ghost:hover {
+            background: #e9eef3;
+            border-color: #b0bfce;
+        }
+
+        @media (max-width: 720px) {
+            body {
+                padding: 1rem 0.8rem;
+            }
+
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .card {
+                padding: 1.5rem 1.2rem;
+            }
+
+            .grid-2 {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <!-- hero 区 -->
+    <section class="hero">
+        <h1>奇异果体育 · 简明使用指南</h1>
+        <p class="sub">一份偏重实用细节的说明页，帮你快速了解平台特点与访问注意事项。</p>
+        <span class="tagline">保持清晰 · 轻量参考</span>
+    </section>
+
+    <!-- 优势区：几个关键特点 -->
+    <section class="card">
+        <h2>常见场景与特点</h2>
+        <div class="grid-2">
+            <div class="item">
+                <strong>多元项目覆盖</strong>
+                <small>足球、篮球、网球、电竞赛事等，按类别整理，方便浏览。</small>
+            </div>
+            <div class="item">
+                <strong>界面布局偏简洁</strong>
+                <small>没有过度装饰，信息层级相对清楚，适合快速查找。</small>
+            </div>
+            <div class="item">
+                <strong>实时内容更新</strong>
+                <small>比赛数据、比分变动、赛程调整都会在页面上反映。</small>
+            </div>
+            <div class="item">
+                <strong>账号与使用提示</strong>
+                <small>建议提前确认网络环境、设备兼容性，以及账户安全设置。</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- 说明区：访问提醒 + 简明指引 -->
+    <section class="card">
+        <h2>访问提醒与简单说明</h2>
+        <p style="margin-bottom:0.8rem; margin-top:0.2rem;">
+            <a href="https://index-qygsports.com" style="color:#1a3b5a; font-weight:600; text-decoration:underline; text-underline-offset:3px;">奇异果体育</a> 
+            是一个综合体育信息服务站点，以下几条提醒可以帮助你更顺畅地浏览：
+        </p>
+        <ul style="padding-left: 1.5rem; list-style: disc; color: #2c3d50;">
+            <li><strong>首次访问</strong> —— 建议使用最新版 Chrome、Edge 或 Safari 浏览器，并允许必要的脚本加载。</li>
+            <li><strong>网络要求</strong> —— 为了保证数据实时性，请确保网络通畅；部分功能可能依赖稳定的连接。</li>
+            <li><strong>账户安全</strong> —— 设置独立的登录密码，并定期更新；不要在公共设备上保存敏感信息。</li>
+            <li><strong>界面导航</strong> —— 首页按运动项目分类排列，也可通过搜索框快速定位感兴趣的内容。</li>
+        </ul>
+        <div style="margin-top:1.4rem; display: flex; flex-wrap: wrap; gap: 0.5rem; border-top: 1px solid #eaeef3; padding-top: 1.2rem;">
+            <span style="background:#eef3f9; border-radius:30px; padding:0.3rem 1.2rem; font-size:0.9rem;">⚡ 数据仅供参考</span>
+            <span style="background:#eef3f9; border-radius:30px; padding:0.3rem 1.2rem; font-size:0.9rem;">🔒 注意隐私保护</span>
+        </div>
+    </section>
+
+    <!-- FAQ 摘要区 -->
+    <section class="card">
+        <h2>常见问题摘要</h2>
+        <ul class="faq-list">
+            <li>
+                <span class="q">问：页面加载后内容显示不完整怎么办？</span>
+                <div class="a">检查浏览器是否为最新版本，或尝试关闭广告拦截插件后刷新。部分资源可能被拦截。</div>
+            </li>
+            <li>
+                <span class="q">问：能否在手机或平板上使用？</span>
+                <div class="a">可以。站点对移动端做了基本适配，横竖屏都可浏览，但部分复杂表格建议横屏查看。</div>
+            </li>
+            <li>
+                <span class="q">问：信息更新频率大概怎样？</span>
+                <div class="a">主要赛事期间比分接近实时，非高峰时段会有几分钟延迟。详细刷新策略可参考站点说明。</div>
+            </li>
+        </ul>
+        <div style="margin-top:1rem; font-size:0.9rem; color:#4d6379;">
+            * 更多具体问题可查看平台内的帮助中心或常见问题专区。
+        </div>
+    </section>
+
+    <!-- 底部链接与辅助信息 -->
+    <div class="footnote">
+        <p style="margin-bottom:0.4rem;">
+            <a href="https://index-qygsports.com" style="font-weight:500;">奇异果体育</a> 
+            — 信息简明页 · 内容仅供参考
+        </p>
+        <p>
+            <a href="#" class="btn-ghost" style="pointer-events:none; opacity:0.7;">风格示例</a>
+            <a href="#" class="btn-ghost" style="pointer-events:none; opacity:0.7;">说明存档</a>
+        </p>
+        <p style="margin-top:1.2rem; font-size:0.85rem; color:#6a7f94;">
+            本页面为独立说明页，不构成任何商业承诺。建议用户自行判断信息准确性。
+        </p>
+    </div>
+
+</div>
+<!-- 注：页面中已包含两次指向 https://index-qygsports.com 的链接（hero 说明区 & 底部），可见文本均为"奇异果体育" -->
+</body>
+</html>
